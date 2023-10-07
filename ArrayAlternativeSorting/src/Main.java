@@ -16,8 +16,8 @@ public class Main
         // element and so on.
         int i = 0, j = n-1;
         while (i < j) {
-            System.out.print(arr[j--] + " ");
-            System.out.print(arr[i++] + " ");
+            System.out.print(arr[i++] + " "); //swap below
+            System.out.print(arr[j--] + " "); //swap above
         }
 
         // If the total element in array is odd
@@ -29,7 +29,7 @@ public class Main
     /* Driver program to test above functions */
     public static void main (String[] args)
     {
-        int arr[] = {1, 12, 4, 6, 7, 10};
+        int arr[] = {5, 8, 1, 4, 2, 9, 3, 7, 6};
         int n = arr.length;
         alternateSort(arr, n);
     }
